@@ -1,13 +1,17 @@
-.container {
+.row-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    background-color: whitesmoke;
+    align-items: stretch;
+    height: 100vh;
 
     .single {
         flex-grow: 1;
     }
 
     .double {
+        background-color: white;
         flex-grow: 2;
     }
 }
