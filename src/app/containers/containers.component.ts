@@ -1,3 +1,4 @@
+import { ContainersService } from './../containers.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./containers.component.scss']
 })
 export class ContainersComponent implements OnInit {
-  containers: Array<String> = ["test", "test2"];
-  constructor() { }
+  private containersService: ContainersService;
+
+  containers;
+
+  constructor(containersService: ContainersService) {
+    this.containersService = containersService;
+  }
 
   ngOnInit() {
+    this.containers = this.containersService.getContainers();
   }
 
 }

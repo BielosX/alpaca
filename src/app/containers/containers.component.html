@@ -2,8 +2,8 @@
   <div class="single"></div>
   <div class="double">
     <mat-selection-list>
-      <mat-list-option *ngFor="let container of containers">
-        {{container}}
+      <mat-list-option *ngFor="let container of containers | async">
+        {{container.name}}
       </mat-list-option>
     </mat-selection-list>
   </div>
