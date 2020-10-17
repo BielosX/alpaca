@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    .single {
+        flex-grow: 1;
+    }
+
+    .double {
+        flex-grow: 2;
+    }
+}

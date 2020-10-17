@@ -9,7 +9,6 @@ import { ContainersComponent } from './containers/containers.component';
 import { ImagesComponent } from './images/images.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatListModule} from '@angular/material/list';
 
 @NgModule({
@@ -25,7 +24,6 @@ import {MatListModule} from '@angular/material/list';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    FlexLayoutModule,
     MatListModule
   ],
   providers: [],
