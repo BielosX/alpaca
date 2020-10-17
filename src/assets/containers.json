@@ -1,8 +1,8 @@
 [
     {
-        "name": "test"
+        "Image": "ubuntu:latest"
     },
     {
-        "name": "test2"
+        "Image": "alpine:latest"
     }
 ]

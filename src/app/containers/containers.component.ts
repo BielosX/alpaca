@@ -1,4 +1,4 @@
-import { ContainersService } from './../containers.service';
+import { ContainersService, Container } from './../containers.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContainersComponent implements OnInit {
   private containersService: ContainersService;
 
-  containers;
+  containers: Promise<Array<Container>>;
 
   constructor(containersService: ContainersService) {
     this.containersService = containersService;
