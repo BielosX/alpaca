@@ -2,9 +2,12 @@
   <div class="single"></div>
   <div class="double">
     <mat-selection-list>
-      <mat-list-option *ngFor="let container of containers | async">
-        {{container.Image}}
-      </mat-list-option>
+      <div *ngFor="let container of containers | async; last as isLast">
+        <mat-list-option>
+          {{container.Image}}
+        </mat-list-option>
+        <mat-divider *ngIf="!isLast"></mat-divider>
+      </div>
     </mat-selection-list>
   </div>
   <div class="single"></div>

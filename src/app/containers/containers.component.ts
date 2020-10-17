@@ -18,5 +18,4 @@ export class ContainersComponent implements OnInit {
   ngOnInit() {
     this.containers = this.containersService.getContainers();
   }
-
 }

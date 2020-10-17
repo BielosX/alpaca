@@ -4,5 +4,8 @@
     },
     {
         "Image": "alpine:latest"
+    },
+    {
+        "Image": "postgres:13-alpine"
     }
 ]
