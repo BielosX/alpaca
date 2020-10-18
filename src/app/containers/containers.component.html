@@ -1,8 +1,12 @@
 <div class="row-container">
   <div class="single">
+    <app-details [isOpen]="dockerContainers.selectedOptions.selected.length == 1">
+      <p>Test</p>
+      <p>Test2</p>
+    </app-details>
   </div>
   <div class="double">
-    <mat-selection-list>
+    <mat-selection-list #dockerContainers>
       <div *ngFor="let container of containers | async; last as isLast">
         <mat-list-option>
           {{container.Image}}

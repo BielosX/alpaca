@@ -12,13 +12,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
-  declarations: [			
+  declarations: [				
     AppComponent,
       NavbarComponent,
       ContainersComponent,
-      ImagesComponent
+      ImagesComponent,
+      DetailsComponent
    ],
   imports: [
     BrowserModule,

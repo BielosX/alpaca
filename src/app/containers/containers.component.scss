@@ -5,6 +5,7 @@
     background-color: whitesmoke;
     align-items: stretch;
     height: 100vh;
+    overflow-y: hidden;
 
     .single {
         flex-grow: 1;
