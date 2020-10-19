@@ -5,4 +5,11 @@
     width: 90%;
     height: 100vh;
     box-shadow: 10px 0 5px -2px grey;
+    align-items: center;
+
+    ::ng-deep {
+        & > * {
+            max-width: 90%;
+        }
+    }
 }
